@@ -3,13 +3,13 @@ places = [{
 	city: 'Seattle',
 	state: 'WA',
 	cuisines: 'Thai, Pan-Asian',
-	pic: 'http://placekitten.com/g/100/200'
+	pic: '/img/h-thai-ml-tables.png'
     }, {
 	name: 'Coding Cat Cafe',
 	city: 'Phoenix',
 	state: 'AZ',
 	cuisines: 'Coffee, Bakery',
-	pic: 'http://placekitten.com/g/100/200'
+	pic: '/img/coffee-cat.jpg'
 }]
 
 module.exports = places;
