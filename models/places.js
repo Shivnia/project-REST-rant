@@ -13,4 +13,4 @@ let places = [{
 }]
 
 
-module.exports = places;
+module.exports = places
