@@ -38,3 +38,9 @@ main {
     margin-left: 20px;
     background-color: white;
 }
+
+img{
+    max-width: 200px;
+    max-height: 200px;
+    
+}
