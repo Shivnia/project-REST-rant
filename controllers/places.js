@@ -72,17 +72,17 @@ router.get('/:id/comment', (req, res) => {
 router.post('/:id/comment', (req, res) => {
     console.log("!!!!!!!!!!!!!!")
     console.log(req.body)
-    if (req.body.rant = 'on') {
-        req.body.rant = true
-    } else {
-        req.body.rant = false
-    }
-
+    const isRant = req.body.rant === 'on';
     db.Place.findById(req.params.id)
         .then(place => {
             console.log("Place to add comment:")
             console.log(place)
-            db.Comment.create(req.body)
+            db.Comment.create({
+                content: req.body.content,
+                author: req.body.author,
+                stars: req.body.stars,
+                rant: isRant
+            })
                 .then(comment => {
                     console.log("New comment:")
                     console.log(comment)
