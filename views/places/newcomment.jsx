@@ -23,9 +23,9 @@ function comment_form({ place }) {
                     </div>
                     <div className="form-group mx-auto col-sm-6 col-md-4 col-lg-3">
                         <label htmlFor="rant">Rant</label>
-                        <input type="checkbox" name="rant" id="rant" defaultChecked />
+                        <input type="checkbox" name="rant" id="rant" />
                     </div>
-                    <input className="btn btn-primary" type="submit" value="Add Place" />
+                    <input className="btn btn-primary" type="submit" value="Add Place" defaultChecked />
                 </form>
             </main>
         </Def>
